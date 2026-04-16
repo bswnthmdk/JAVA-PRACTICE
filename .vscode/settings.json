@@ -1,10 +1,10 @@
 {
   "github.copilot.enable": {
-    "*": false,
+    "*": true,
     "plaintext": false,
     "markdown": false,
     "scminput": false,
-    "java": false,
+    "java": true,
     "javascriptreact": true,
     "css": false,
     "javascript": true,
