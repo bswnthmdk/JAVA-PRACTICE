@@ -3,16 +3,18 @@ public class Input3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        String line = sc.nextLine().trim();
+        String line = sc.nextLine().trim();  // [1, 2, 3, 4, 5]
 
+        // remove brackets and whitespace
         line = line.replaceAll("\\[|\\]", "");
 
-        String[] parts = line.split(",");
+        String[] parts = line.split(",");   // ["1", "2", "3", "4", "5"]
 
         int[] arr = new int[parts.length];
 
-        for (int i = 0; i < parts.length; i++)
+        for (int i = 0; i < parts.length; i++){
             arr[i] = Integer.parseInt(parts[i].trim());
+        }
 
         System.out.println(Arrays.toString(arr));
     }

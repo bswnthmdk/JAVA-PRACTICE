@@ -4,6 +4,7 @@ public class Input2 {
         Scanner sc = new Scanner(System.in);
 
         String line = sc.nextLine();    // 1,2,3,4,5
+        
         String[] parts = line.split(",");   // ["1", "2", "3", "4", "5"]
 
         int[] arr = new int[parts.length];
