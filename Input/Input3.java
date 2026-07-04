@@ -6,7 +6,7 @@ public class Input3 {
         String line = sc.nextLine().trim();  // [1, 2, 3, 4, 5]
 
         // remove brackets and whitespace
-        line = line.replaceAll("\\[|\\]", "");
+        line = line.replaceAll("\\[|\\]", "");  // 1, 2, 3, 4, 5
 
         String[] parts = line.split(",");   // ["1", "2", "3", "4", "5"]
 
