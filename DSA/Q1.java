@@ -1,52 +1,41 @@
+// GFG - Validate an IP Address
 import java.util.*;
-class Q1{
-    static void problemStatement(){
-        System.out.println("""
-            Problem Statement of Question-1
+class IPv4{
+    public static void main(String[] args) {
+        System.out.println("Hello World");
 
-            Given a string S containing only '*' and '#'.
-
-            Return:
-            +ve : '*' > '#'
-            -ve : '#' > '*'
-            0  : '*' = '#'
-
-            Example 1:
-            Input: ###***
-            Output: 0
-
-            Explanation: There are 3 '#' and 3 '*', so the counts are equal.
-
-            Example 2:
-            Input: **##*
-            Output: 1
-
-            Explanation: There are 3 '*' and 2 '#'. Difference = 1.
-        """);
-    }
-
-    public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
 
-        // String s = sc.nextLine();
+        String ip = sc.nextLine();
 
-        // System.out.println("min no - "+minNo(s));
-
-        problemStatement();
+        if(isValidIP(ip)) {
+            System.out.println("Valid IP");
+        } else {
+            System.out.println("Invalid IP");
+        }
+        
 
     }
 
-    static int minNo(String s){
-        int hash = 0, star = 0;
-
-        for(char ch:s.toCharArray()){
-            if(ch == '#'){
-                hash++;
-            }else{
-                star++;
-            }
-        }
-
-        return star - hash;
+    static boolean isValidIP(String ip) {
+        String[] parts = ip.split("\\.");
+        System.out.println("Length: "+parts.length);
+		
+		if (parts.length != 4) {
+			return false;
+		}
+		
+		for (String part:parts) {
+            System.out.println(part);
+			if ("".equals(part) || (part.length()>1 && part.charAt(0) == '0')) {
+				return false;
+			}
+			int num = Integer.parseInt(part);
+			
+			if (num<0 || 255<num) {
+				return false;
+			}
+		}
+		return true;
     }
 }

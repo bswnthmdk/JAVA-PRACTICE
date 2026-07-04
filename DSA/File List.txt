@@ -1,2 +1,3 @@
-IPv4.java -> GFG - Validate an IP Address
-Q1.java -> 
+Q1.java -> GFG - Validate an IP Address
+Q2.java -> NQT_PYQ - Balance Special Characters
+Q3.java -> NQT_PYQ - Count Record-Breaking Elements
