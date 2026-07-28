@@ -24,10 +24,10 @@ class OOP_009{
         */
 
         Student student1 = new Student();
-        student1.rollNo = 20;
-        Student student2 = new Student();
-        student2.rollNo = 30;
-        Student.display(student1); 
+        // student1.rollNo = 20;
+        // Student student2 = new Student();
+        // student2.rollNo = 30;
+        // Student.display(student1); 
     }
 }
 
@@ -60,6 +60,9 @@ class ParentClass{
 }
 
 class Student{
+    static {
+        System.out.println("Static block executed");
+    }
     int rollNo = 10;
     static void display(Student student){
         // System.out.println("This is a static method");
