@@ -1,6 +1,7 @@
 class OOP_009{
     public static void main(String[] args){
 
+        /*
         // Creating object-A
         ParentClass objA = new ParentClass();
 
@@ -20,6 +21,13 @@ class OOP_009{
         System.out.println("Value of a from objB: " + objB.getA()); // 0
         System.out.println("Value of b from objB: " + objB.getB()); // 0
         System.out.println("Value of staticVariable from objB: " + objB.getStaticVariable());   // 100
+        */
+
+        Student student1 = new Student();
+        student1.rollNo = 20;
+        Student student2 = new Student();
+        student2.rollNo = 30;
+        Student.display(student1); 
     }
 }
 
@@ -48,5 +56,14 @@ class ParentClass{
     }
     int getStaticVariable(){
         return staticVariable;
+    }
+}
+
+class Student{
+    int rollNo = 10;
+    static void display(Student student){
+        // System.out.println("This is a static method");
+        // System.out.println(new Student().rollNo);
+        System.out.println(student.rollNo);
     }
 }
