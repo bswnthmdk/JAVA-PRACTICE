@@ -1,5 +1,5 @@
-public class OOP_029{
-    public static void main(String args[]){
+public class OOP_029 {
+    public static void main(String args[]) {
         int a = 100;
         int b = 200;
         int c = 300;

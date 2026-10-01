@@ -1,6 +1,8 @@
 class Counter {
     int c = 0;
-    //  increament() function ta parallely use hochhe(aka Race Condition), toh eta ke stop korar jonno 'synchronized' keyword ta lagiye dite hobe
+
+    // increament() function ta parallely use hochhe(aka Race Condition), toh eta ke
+    // stop korar jonno 'synchronized' keyword ta lagiye dite hobe
     public synchronized void increament() {
         c++;
     }
@@ -28,9 +30,12 @@ public class OOP_019 {
 
         th1.start();
         th2.start();
-        //  Nicher 2 to lines er mane ei noi je, 'th1' terminate houar pore 'th2' start hobe ar tarpore giye 'main' thread start hobe. Er mane ei je 'th1' & 'th2' both have already started, now after terminating both the threads 'th1' & 'th2' the 'main' thread will starts.
-        th1.join(); //  'th1' sesh holo.
-        th2.join(); //  'th2' sesh holo.
+        // Nicher 2 to lines er mane ei noi je, 'th1' terminate houar pore 'th2' start
+        // hobe ar tarpore giye 'main' thread start hobe. Er mane ei je 'th1' & 'th2'
+        // both have already started, now after terminating both the threads 'th1' &
+        // 'th2' the 'main' thread will starts.
+        th1.join(); // 'th1' sesh holo.
+        th2.join(); // 'th2' sesh holo.
 
         System.out.println("Final value of c: " + counter.c);
     }

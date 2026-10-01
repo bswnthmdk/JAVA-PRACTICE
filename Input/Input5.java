@@ -8,8 +8,9 @@ public class Input5 {
         int cols = sc.nextInt();
 
         // MOVES THE POINTER TO THE NEXT LINE.
-        sc.nextLine(); 
-        // So that we can read the next line after reading integers, if not then it will skip the next line and read the current line
+        sc.nextLine();
+        // So that we can read the next line after reading integers, if not then it will
+        // skip the next line and read the current line
 
         String line = sc.nextLine(); // 1,2,3,4,5
 

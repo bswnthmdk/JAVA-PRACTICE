@@ -5,7 +5,7 @@ public class TicketValidators {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        
+
         // Prompt the ticket agent to enter a six-digit ticket number
         System.out.print("Enter a 6-digit ticket number: ");
         int ticketNumber = scanner.nextInt();

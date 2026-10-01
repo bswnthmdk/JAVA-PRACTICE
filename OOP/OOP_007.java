@@ -33,8 +33,8 @@ class DemoClass {
 public class OOP_007 {
     public static void main(String[] args) {
         DemoClass demoObj = new DemoClass();
-        demoObj.method(11); 
-        demoObj.method(11.1f, 22); 
+        demoObj.method(11);
+        demoObj.method(11.1f, 22);
         demoObj.method(22, 11.1f);
     }
 }

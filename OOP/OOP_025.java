@@ -1,5 +1,5 @@
 abstract class Animal {
-    abstract void name();   // Abstract method
+    abstract void name(); // Abstract method
 
     void show() {
         System.out.println("Animal");

@@ -1,4 +1,5 @@
 import java.util.*;
+
 class Solution {
     public List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> res = new ArrayList<>();
@@ -9,7 +10,8 @@ class Solution {
     private void helperFun(int[] nums, int i, List<List<Integer>> res) {
         if (i == nums.length - 1) {
             List<Integer> permutation = new ArrayList<>();
-            for (int num : nums) permutation.add(num);
+            for (int num : nums)
+                permutation.add(num);
             res.add(permutation);
             return;
         }
@@ -27,4 +29,3 @@ class Solution {
         nums[j] = tmp;
     }
 }
-

@@ -15,7 +15,8 @@ public class SimpleSwingFrame {
         // Set the size of the frame (width x height)
         frame.setSize(400, 300);
 
-        // Set the default close operation (what happens when the user clicks the close button)
+        // Set the default close operation (what happens when the user clicks the close
+        // button)
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Exit the application
 
         // Create a JLabel (text label)

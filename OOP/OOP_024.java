@@ -39,5 +39,4 @@ public class OOP_024 {
         for (String item : hashSet) {
             System.out.println(item);
         }
-    }
-}
+    }}
